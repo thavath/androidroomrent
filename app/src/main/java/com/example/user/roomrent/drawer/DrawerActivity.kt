@@ -9,10 +9,14 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.user.roomrent.R
 import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
+import android.widget.TextView
+
+
 
 class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -20,7 +24,6 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
         setSupportActionBar(toolbar)
-
 //        fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
@@ -33,6 +36,9 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+        val hView = nav_view.getHeaderView(0)
+        val profileImage = hView.findViewById(R.id.profile_image) as ImageView
+        profileImage.setImageResource(R.drawable.ic_menu_camera)
     }
 
     override fun onBackPressed() {
@@ -61,6 +67,7 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+
         when (item.itemId) {
             R.id.nav_profile -> {
 
