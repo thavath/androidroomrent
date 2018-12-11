@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "496444599275",
+    "firebase_url": "https://roomrent-64ab1.firebaseio.com",
+    "project_id": "roomrent-64ab1",
+    "storage_bucket": "roomrent-64ab1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496444599275:android:bb3d823810c567c8",
+        "android_client_info": {
+          "package_name": "com.example.user.roomrent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496444599275-ejichovkabplgmubgb8e0p1ulme3481f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.roomrent",
+            "certificate_hash": "bd17fbf1b4d9b1592172531d70ac11ad6dbe9f06"
+          }
+        },
+        {
+          "client_id": "496444599275-tai3mtt36cc137rpa2i9rmjosu1dcevk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXVhvVVa3WJLd-gApZ1ltANJbtaMSqSMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496444599275-tai3mtt36cc137rpa2i9rmjosu1dcevk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
